@@ -9,4 +9,8 @@ public class GitDemo {
 	public void sub() {
 		System.out.println("this is a substraction method.");
 	}
+	
+	public void mul() {
+		System.out.println("this is a multiplication method.");
+	}
 }
