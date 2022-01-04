@@ -13,4 +13,8 @@ public class GitDemo {
 	public void mul() {
 		System.out.println("this is a multiplication method.");
 	}
+	
+	public void div() {
+		System.out.println("this is a division method.");
+	}
 }
