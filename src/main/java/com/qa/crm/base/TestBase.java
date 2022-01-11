@@ -24,8 +24,8 @@ public class TestBase {
 	{
 		try {
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("E:\\study\\FirstAutomation\\src\\main"
-				+ "\\java\\com\\qa\\crm\\config\\config.properties");
+		FileInputStream fis = new FileInputStream("E:\\study\\GitDemo\\src\\"
+				+ "main\\java\\com\\qa\\crm\\config\\config.properties");
 		prop.load(fis);
 		}
 		catch(FileNotFoundException e) {
@@ -43,17 +43,17 @@ public class TestBase {
 		String browserName= prop.getProperty("browser");
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "E:\\study\\FirstAutomation\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "E:\\study\\GitDemo\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if(browserName.equals("FF"))
 		{
-			System.setProperty("webdriver.gecko.driver", "E:\\study\\FirstAutomation\\Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "E:\\study\\GitDemo\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		else if(browserName.equals("IE"))
 		{
-			System.setProperty("webdriver.ie.driver", "E:\\study\\FirstAutomation\\Drivers\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "E:\\study\\GitDemo\\Drivers\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}	
 			driver.manage().window().maximize();
